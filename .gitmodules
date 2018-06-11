@@ -13,3 +13,9 @@
 [submodule "pkg/plugins/azure/envoy"]
 	path = pkg/plugins/azure/envoy
 	url = https://github.com/solo-io/envoy-azure-functions
+[submodule "build-envoy/envoy-common"]
+	path = build-envoy/envoy-common
+	url = https://github.com/solo-io/envoy-common
+[submodule "build-envoy/envoy"]
+	path = build-envoy/envoy
+	url = https://github.com/envoyproxy/envoy
