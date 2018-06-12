@@ -94,4 +94,6 @@ EXTENSIONS = {
 
     # solo stuff
     "solo.io.transformation":                  "@transformation_filter//:filter_lib",
+    "solo.io.aws_lambda":                  "@aws_lambda//:filter_lib",
+
 }

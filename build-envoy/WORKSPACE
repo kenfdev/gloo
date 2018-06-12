@@ -21,6 +21,12 @@ local_repository(
 )
 
 
+local_repository(
+    name = "aws_lambda",
+    path = "../pkg/plugins/aws/envoy",
+)
+
+
 JSON_SHA = "c8ea63a31bbcf652d61490b0ccd86771538f8c6b"
 
 new_http_archive(
