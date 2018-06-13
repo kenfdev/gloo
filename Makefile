@@ -204,4 +204,4 @@ test: unit e2e
 #  github.com/gogo/protobuf
 
 envoy:
-	cd build-envoy && bazel build -c dbg @envoy//source/exe:envoy-static
+	cd build-envoy && bazel build -c dbg //:envoy
