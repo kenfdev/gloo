@@ -96,5 +96,7 @@ EXTENSIONS = {
     "solo.io.transformation":                  "@transformation_filter//:filter_lib",
     "solo.io.aws_lambda":                  "@aws_lambda//:filter_lib",
     "solo.io.nats_streaming":                  "@nats_streaming_filter//:filter_lib",
+    "solo.io.google_function":                  "@google_functions//:filter_lib",
+    "solo.io.azure_function":                  "@azure_functions_filter//:filter_lib",
 
 }

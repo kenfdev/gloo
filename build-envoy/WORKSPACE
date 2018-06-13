@@ -31,6 +31,16 @@ local_repository(
     path = "../pkg/plugins/nats-streaming/envoy",
 )
 
+local_repository(
+    name = "azure_functions_filter",
+    path = "../pkg/plugins/azure/envoy",
+)
+
+local_repository(
+    name = "google_functions",
+    path = "../pkg/plugins/google/envoy",
+)
+
 
 JSON_SHA = "c8ea63a31bbcf652d61490b0ccd86771538f8c6b"
 
