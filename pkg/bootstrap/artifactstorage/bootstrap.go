@@ -6,7 +6,6 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/solo-io/gloo/pkg/bootstrap"
-	"github.com/solo-io/gloo/pkg/storage/crd"
 	"github.com/solo-io/gloo/pkg/storage/dependencies"
 	consulfiles "github.com/solo-io/gloo/pkg/storage/dependencies/consul"
 	filestorage "github.com/solo-io/gloo/pkg/storage/dependencies/file"
@@ -30,7 +29,7 @@ func Bootstrap(opts bootstrap.Options) (dependencies.FileStorage, error) {
 		}
 		return store, nil
 	case bootstrap.WatcherTypeKube:
-		cfg, err := crd.GetConfig(opts.KubeOptions.MasterURL, opts.KubeOptions.KubeConfig)
+		cfg, err := kube.GetConfig(opts.KubeOptions.MasterURL, opts.KubeOptions.KubeConfig)
 		if err != nil {
 			return nil, errors.Wrap(err, "building kube restclient")
 		}
